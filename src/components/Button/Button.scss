@@ -1,0 +1,16 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/colors.scss';
+
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: $color_primary;
+    background-color: $color_white;
+    text-decoration: none;
+
+    &:hover {
+        color: $color_secondary;
+
+    }
+}

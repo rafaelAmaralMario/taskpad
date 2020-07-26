@@ -1,0 +1,36 @@
+{
+  "name": "taskpad",
+  "version": "1.0.0",
+  "description": "a simple task handler",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelAmaralMario/taskpad.git"
+  },
+  "author": "Rafael do Amaral Mario",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelAmaralMario/taskpad/issues"
+  },
+  "homepage": "https://github.com/rafaelAmaralMario/taskpad#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  }
+}

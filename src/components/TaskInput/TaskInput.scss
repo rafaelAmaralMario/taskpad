@@ -1,0 +1,26 @@
+.task-input-container {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    max-width: 300px;
+    margin-top: 30px;
+
+    .task-input {
+        border: none;
+        padding: 15px;
+        width: 100%;
+        padding-right: 20px;
+
+        &:focus {
+            border: none;
+            outline: none;
+
+        }
+    }
+
+    .add-icon {
+        position: absolute;
+        right: 3px;
+    }
+}

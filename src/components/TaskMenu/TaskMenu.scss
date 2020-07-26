@@ -1,0 +1,51 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/colors.scss";
+
+
+.menu-container {
+    border-bottom: 1px solid $color_white;
+    width: 100%;
+    background-color: $color_secondary;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    @include box-shadow(2);
+    z-index: 3;
+
+    .menu {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        color: $color_white;
+        margin: auto;
+        align-items: center;
+
+        .menu-title {
+            display: flex;
+            align-items: center;
+
+            .menu-icon {
+                margin-right: 15px;
+                font-size: 22px;
+            }
+        }
+
+        .menu-actions {
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                font-size: 20px;
+
+                &.rotation {
+                    @include rotation();
+                }
+
+                &.error-icon {
+                    color: $color_error
+                }
+            }
+        }
+    }
+}

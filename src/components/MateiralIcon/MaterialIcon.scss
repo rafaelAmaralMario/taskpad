@@ -1,0 +1,12 @@
+.material-icons {
+    font-size: 18px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.08);
+    }
+}

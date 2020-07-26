@@ -1,0 +1,51 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/colors.scss";
+
+
+
+
+.task-item {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid $color_dark_fray;
+    margin-bottom: 10px;
+    background-color: $color_white;
+    align-items: center;
+    @include box-shadow(1);
+
+    .task-informations {
+        .task-input {
+            height: 17px;
+            padding: 0;
+            color: $color_secondary;
+
+        }
+    }
+
+    .task-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .task-remove {
+            color: $color_error;
+        }
+
+        .task-done {
+            color: $color_success;
+        }
+    }
+
+    &.task-concluded {
+        background-color: $color_success;
+        color: $color_white;
+
+        .task-actions {
+            .task-remove {
+                color: $color_white;
+            }
+        }
+    }
+}
